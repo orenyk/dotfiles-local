@@ -1,0 +1,19 @@
+[color]
+	ui = auto
+[user]
+	name = Oren Kanner
+	email = okanner@gmail.com
+[alias]
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	up = "!git remote update -p origin; git merge --ff-only @{u}"
+  pf = push --force-with-lease
+[core]
+	editor = vim
+	autocrlf = input
+	safecrlf = true
+	excludesfile = /home/oren/.gitignore_global
+[push]
+	default = simple

@@ -1,0 +1,26 @@
+" configs
+set autoread                        " load file from disk, i.e. for git reset
+set backspace=indent,eol,start      " sane backspace behavior (chris toomey)
+set scrolloff=4                     " keep at least 4 lines below the cursor
+
+" colorscheme
+colorscheme jellybeans
+
+" remap 0 to ^
+nmap 0 ^
+
+" vimrc editing / reload
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+
+" escape from insert mode more easily
+imap jk <esc>
+imap kj <esc>
+
+" easily quit out of help files
+autocmd Filetype help nmap <buffer> q :q<cr>
+
+" edit files from the same directory as the one you're currently in
+map <leader>e :e <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
+map <leader>s :split <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
+map <leader>v :vnew<C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
