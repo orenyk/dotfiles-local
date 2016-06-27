@@ -3,6 +3,7 @@
 [user]
 	name = Oren Kanner
 	email = okanner@gmail.com
+	signingkey = 84931AE2
 [alias]
 	br = branch
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
