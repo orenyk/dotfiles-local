@@ -1,5 +1,5 @@
 # Git stuff
-alias gci="g ci"
+alias gci="g ci -S"
 alias gco="g co"
 alias gst="g st"
 alias gap="g add -p"
