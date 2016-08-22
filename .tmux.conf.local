@@ -3,6 +3,34 @@ unbind C-b
 set -g prefix C-a
 bind a send-prefix
 
+# plus expands pane to full-screen
+unbind +
+bind + resize-pane -Z
+
+# horizontal and vertical splits
+unbind |
+bind | split-window -h
+unbind _
+bind _ split-window
+
+# cycle through panes
+unbind ^A
+bind ^A select-pane -t :.+
+
+# resize panes
+unbind Right
+bind Right resize-pane -R 8
+unbind Left
+bind Left resize-pane -L 8
+unbind Up
+bind Up resize-pane -U 4
+unbind Down
+bind Down resize-pane -D 4
+
+# reload config
+unbind r
+bind r source-file ~/.tmux.conf
+
 # sane scrolling
 set -g mouse on
 bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
