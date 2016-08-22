@@ -24,3 +24,4 @@ autocmd Filetype help nmap <buffer> q :q<cr>
 map <leader>e :e <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
 map <leader>s :split <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
 map <leader>v :vnew<C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
+map <leader>i mmgg=G`m<CR>
