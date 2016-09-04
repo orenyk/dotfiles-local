@@ -21,5 +21,5 @@ cd_to_most_recently_opened_directory() {
   fi
 }
 
-. $HOME/.asdf/asdf.sh
 cd_to_most_recently_opened_directory
+. $HOME/.asdf/asdf.sh
