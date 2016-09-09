@@ -11,6 +11,7 @@
 	dump = cat-file -p
 	up = "!git remote update -p origin; git merge --ff-only @{u}"
   pf = push --force-with-lease
+  rbr = "!f() { git push origin master:refs/heads/$1; git fetch; git checkout $1; }; f"
 [core]
 	editor = vim
 	autocrlf = input
