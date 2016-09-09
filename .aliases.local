@@ -6,7 +6,7 @@ alias gap="g add -p"
 alias gup="g up"
 alias gbr="g br"
 alias gpf="g pf"
-alias grbr = "g rbr"
+alias grbr="g rbr"
 
 
 
