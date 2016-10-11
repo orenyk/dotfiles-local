@@ -1,3 +1,4 @@
 " jellybeans colorscheme
 Plug 'nanotech/jellybeans.vim'
 Plug 'elixir-lang/vim-elixir'
+Plug 'mattn/emmet-vim'
