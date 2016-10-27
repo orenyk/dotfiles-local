@@ -1,0 +1,7 @@
+selectp -t 0
+splitw -v -p 20 'vim'
+rotatew
+neww -n phantom 'phantomjs --wd'
+selectw -l
+selectp -t 1
+

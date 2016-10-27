@@ -37,3 +37,4 @@ bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft=
 bind -n WheelDownPane select-pane -t= \; send-keys -M
 
 bind D source-file ~/.tmux-dev
+bind P source-file ~/.tmux-dev-phoenix
