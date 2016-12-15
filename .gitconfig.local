@@ -16,6 +16,8 @@
 	editor = vim
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /home/oren/.gitignore_global
+	excludesfile = ~/.gitignore
 [push]
 	default = simple
+[gpg]
+	program = gpg2
