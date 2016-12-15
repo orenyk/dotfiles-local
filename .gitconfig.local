@@ -19,5 +19,7 @@
 	excludesfile = ~/.gitignore
 [push]
 	default = simple
+[commit]
+  gpgsign = true
 [gpg]
 	program = gpg2
