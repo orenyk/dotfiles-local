@@ -1,7 +1,3 @@
-# rbenv stuff
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # git / hub stuff
 eval "$(hub alias -s)"
 
@@ -26,4 +22,3 @@ cd_to_most_recently_opened_directory() {
 }
 
 cd_to_most_recently_opened_directory
-. $HOME/.asdf/asdf.sh
