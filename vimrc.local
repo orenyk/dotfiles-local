@@ -21,7 +21,10 @@ imap kj <esc>
 autocmd Filetype help nmap <buffer> q :q<cr>
 
 " edit files from the same directory as the one you're currently in
-map <leader>e :e <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
-map <leader>s :split <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
-map <leader>v :vnew<C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
+map <leader>ee :e <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
+map <leader>ss :split <C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
+map <leader>vv :vnew<C-R>=escape(expand("%:p:h"),' ') . '/'<cr>
 map <leader>i mmgg=G`m<CR>
+
+" copy to clipboard on MacOS
+set clipboard=unnamed

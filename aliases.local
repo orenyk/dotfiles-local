@@ -8,8 +8,5 @@ alias gbr="g br"
 alias gpf="g pf"
 alias grbr="g rbr"
 
-
-
-
 # Certbot (for manual)
 alias certbot="certbot --config-dir ~/.certbot/config --work-dir ~/.certbot/work --logs-dir ~/.certbot/log"

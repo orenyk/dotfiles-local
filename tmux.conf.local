@@ -31,10 +31,6 @@ bind Down resize-pane -D 4
 unbind r
 bind r source-file ~/.tmux.conf
 
-# sane scrolling
-set -g mouse on
-bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
-bind -n WheelDownPane select-pane -t= \; send-keys -M
-
+# custom window setups
 bind D source-file ~/.tmux-dev
 bind P source-file ~/.tmux-dev-phoenix
