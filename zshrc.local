@@ -8,6 +8,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH" # recommended by brew doctor
 
+# asdf setup
+source /usr/local/opt/asdf/asdf.sh
+
 export CURRENT_PROJECT_PATH=$HOME/.current-project
 
 function chpwd {
