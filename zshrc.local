@@ -1,16 +1,7 @@
-# git / hub stuff
-eval "$(hub alias -s)"
-
-# heroku
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# homebrew stuff
-export PATH="$HOME/.bin:$PATH"
-export PATH="/usr/local/bin:$PATH" # recommended by brew doctor
-
 # asdf setup
-source /usr/local/opt/asdf/asdf.sh
+source $HOME/.asdf/asdf.sh
 
+# remember last directory
 export CURRENT_PROJECT_PATH=$HOME/.current-project
 
 function chpwd {

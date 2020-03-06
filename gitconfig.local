@@ -1,25 +1,25 @@
 [color]
-	ui = auto
+  ui = auto
 [user]
-	name = Oren Kanner
-	email = okanner@gmail.com
-	signingkey = 84931AE2
+  name = Oren Kanner
+  email = okanner@gmail.com
+  signingkey = D23A48E4
 [alias]
-	br = branch
-	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen%cn%Creset %Cblue(%cr)%Creset' --abbrev-commit --date=relative
-	type = cat-file -t
-	dump = cat-file -p
-	up = "!git remote update -p origin; git merge --ff-only @{u}"
+  br = branch
+  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen%cn%Creset %Cblue(%cr)%Creset' --abbrev-commit --date=relative
+  type = cat-file -t
+  dump = cat-file -p
+  up = "!git remote update -p origin; git merge --ff-only @{u}"
   pf = push --force-with-lease
   rbr = "!f() { git push origin master:refs/heads/$1; git fetch; git checkout $1; }; f"
 [core]
-	editor = vim
-	autocrlf = input
-	safecrlf = true
-	excludesfile = ~/.gitignore
+  editor = vim
+  autocrlf = input
+  safecrlf = true
+  excludesfile = ~/.gitignore
 [push]
-	default = simple
+  default = simple
 [commit]
   gpgsign = true
 [gpg]
-	program = gpg
+  program = gpg
