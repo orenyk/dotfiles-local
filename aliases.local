@@ -1,5 +1,6 @@
 # Git stuff
 alias gci="g ci"
+alias gcimend="g ci --amend --no-edit"
 alias gco="g co"
 alias gst="g st"
 alias gap="g add -p"

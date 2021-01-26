@@ -1,8 +1,3 @@
-# change command combo
-unbind C-b
-set -g prefix C-a
-bind a send-prefix
-
 # plus expands pane to full-screen
 unbind +
 bind + resize-pane -Z
@@ -14,8 +9,8 @@ unbind _
 bind _ split-window
 
 # cycle through panes
-unbind ^A
-bind ^A select-pane -t :.+
+unbind ^S
+bind ^S select-pane -t :.+
 
 # resize panes
 unbind Right
