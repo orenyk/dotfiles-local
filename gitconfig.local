@@ -19,6 +19,8 @@
   excludesfile = ~/.gitignore
 [push]
   default = simple
+[pull]
+  ff = only
 [commit]
   gpgsign = true
 [gpg]
