@@ -29,3 +29,6 @@ bind r source-file ~/.tmux.conf
 # custom window setups
 bind D source-file ~/dotfiles-local/tmux-dev
 bind P source-file ~/dotfiles-local/tmux-dev-phoenix
+
+# theme
+run-shell "~/.tmux/themes/nord-tmux/nord.tmux"

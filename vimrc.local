@@ -4,7 +4,8 @@ set backspace=indent,eol,start      " sane backspace behavior (chris toomey)
 set scrolloff=4                     " keep at least 4 lines below the cursor
 
 " colorscheme
-colorscheme jellybeans
+" colorscheme jellybeans
+colorscheme nord
 
 " remap 0 to ^
 nmap 0 ^
